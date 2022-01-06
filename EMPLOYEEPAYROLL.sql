@@ -19,3 +19,10 @@ insert into employee_payroll(Name,Salary,Start) values
 
 /*UC4*/
 select * from employee_payroll;
+
+
+
+/*UC5*/
+select Name,Salary from employee_payroll where name = 'Rutwik';
+select * from employee_payroll
+where start between cast('2021-10-01' as date) and getdate();
