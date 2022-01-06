@@ -51,3 +51,11 @@ select max(Salary) from employee_payroll where Gender='F' group by Gender;
 
 select count(Salary) from employee_payroll where Gender='M' group by Gender;
 select count(Salary) from employee_payroll where Gender='F' group by Gender;
+
+
+
+
+/*UC8*/
+alter table employee_payroll add Phone varchar(16);
+alter table employee_payroll add Address varchar(100) default 'TBD';
+alter table employee_payroll add Department varchar(50) NOT NULL default '';
